@@ -252,8 +252,24 @@ body.menu-expanded button path{
 
 /* Home ------------------------------- */
 
-
-.stats img{
-    width: 16rem;
+.container .col-a img{
+    border-radius: 50%;
+    width: 22rem;
+    border: 0.3rem solid black;
+    margin-bottom: 2.4rem;
 }
 
+.container .col-a img:hover{
+    box-shadow: 0 1px 15px black;
+    transform:scale(1.02);
+}
+
+.stats .logo img{
+    width: 18rem;
+    margin-bottom: 2.4rem;
+}
+
+.container .col-b p{
+    text-align: left;
+    padding-inline: 2.4rem;
+}
