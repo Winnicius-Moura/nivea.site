@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;  
 }
 
 :root{
@@ -15,11 +16,13 @@
     --primary-color: hsl(var(--hue), 77%, 43%);
     --headline:hsl(210,9%,31%); 
     --paragraph:hsl(210,11%,15%);
+    --brand-beige:hsl(39,100%,97%);
     
     --button-hover:hsl(var(--hue),100%,14%);
 
-    --bg-light: hsl(206, 100%, 91%);
-    
+    --bg-light: hsl(180, 14%, 97%);
+    --brand-light:hsl(calc(var(--hue) - 3), 100%, 91%);
+    --brand-light-2:hsl(calc(var(--hue) - 10), 14%, 97%);
     
 
 }
@@ -95,6 +98,10 @@ section .content p{
     font-size: 1.6rem;
 }
 
+body span{
+    font-weight: bold;
+}
+
 .button{
     background: var(--primary-color);
     border: none;
@@ -142,8 +149,16 @@ nav .container{
     justify-content: space-between;
 }
 
-nav .scroll{
+nav.scroll{
     background: var(--primary-color);
+}
+
+nav.scroll path{
+    fill: white;
+}
+
+nav.scroll button path{
+    stroke: white;
 }
 
 nav button{
@@ -258,15 +273,28 @@ body.menu-expanded button path{
 
 /* Home ------------------------------- */
 
+#home::before{
+    content: "";
+    width: 100%;
+    height: calc(92% + var(--nav-height));
+
+    background-color: var(--brand-light);
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 .container .col-a img{
     border-radius: 50%;
     width: 22rem;
-    border: 0.3rem solid #fefefe;
+    border: 0.3rem solid black;
     margin-bottom: 2.4rem;
 }
 
 .container .col-a img:hover{
-    transform:scale(1.05);
+    transform:scale(1.04);
 }
 
 .logo img{
@@ -279,7 +307,78 @@ body.menu-expanded button path{
     padding-inline: 2.4rem;
 }
 
+.stats{
+    width: 100%;
+    padding-block: 1.4rem;
+    margin-inline: auto;
+    margin-block: 2.4rem;
+
+    background-color: var(--brand-beige);
+    border: 1px solid var(--brand-light);
+    border-radius: .6rem;
+
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.stat h3{
+    font-size: 4.2rem;
+    color: var(--headline);
+    line-height: 130%;
+    margin-bottom: .4rem;
+}
+
+.stat p{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+
 .button{
     margin-inline: auto;
     margin-block: 2.4rem;
+}
+
+/* Services ------------------------- */
+#services header h2{
+    margin-bottom: 6rem;
+}
+#services .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+#services .card{
+    padding: 2.4rem;
+    text-align: left;
+
+    background: white;
+    border: 1px solid var(--brand-light);
+    border-radius: .6rem;
+}
+
+#services .card h3{
+    margin-block: 1.6rem;
+}
+
+
+/* Back to top Button ---------------- */
+#backToTopButton{
+    position: fixed;
+    bottom: 1rem;
+    right: 2.5rem;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translate(100%);
+    transform: 250ms;
+}
+
+#backToTopButton.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
 }
