@@ -6,15 +6,21 @@
 }
 
 :root{
-    --hue:199;
 
-    --headline:hsl(210,9%,31%);
     font-size: 62.5%; 
-    --paragraph:hsl(210,11%,15%);
     --nav-height: 7.2rem;
-    --bg-light: hsl(180, 14%, 97%);
-    --primary-color:hsl(var(--hue), 100%, 26%);
+
+    --hue:209;
+
+    --primary-color: hsl(var(--hue), 77%, 43%);
+    --headline:hsl(210,9%,31%); 
+    --paragraph:hsl(210,11%,15%);
+    
     --button-hover:hsl(var(--hue),100%,14%);
+
+    --bg-light: hsl(206, 100%, 91%);
+    
+    
 
 }
 
@@ -255,16 +261,15 @@ body.menu-expanded button path{
 .container .col-a img{
     border-radius: 50%;
     width: 22rem;
-    border: 0.3rem solid black;
+    border: 0.3rem solid #fefefe;
     margin-bottom: 2.4rem;
 }
 
 .container .col-a img:hover{
-    box-shadow: 0 1px 15px black;
-    transform:scale(1.02);
+    transform:scale(1.05);
 }
 
-.stats .logo img{
+.logo img{
     width: 18rem;
     margin-bottom: 2.4rem;
 }
@@ -272,4 +277,9 @@ body.menu-expanded button path{
 .container .col-b p{
     text-align: left;
     padding-inline: 2.4rem;
+}
+
+.button{
+    margin-inline: auto;
+    margin-block: 2.4rem;
 }
