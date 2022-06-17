@@ -75,7 +75,6 @@ section header h4{
 
     text-transform: uppercase;
 
-    margin-bottom: 1.6rem;
 }
 
 section header h2{
@@ -406,8 +405,6 @@ body.menu-expanded button path{
 #galery{
     background-color: var(--brand-beige);
 }
-
-
 
 /* Back to top Button ---------------- */
 #backToTopButton{
