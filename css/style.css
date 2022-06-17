@@ -82,6 +82,7 @@ section header h2{
     font-size: 3rem;
     line-height: 3.9rem;
     color: var(--headline);
+    margin-bottom: 6rem;
 }
 
 section header h1{
@@ -362,9 +363,6 @@ body.menu-expanded button path{
 }
 
 /* Services ------------------------- */
-#services header h2{
-    margin-bottom: 6rem;
-}
 #services .cards{
     display: flex;
     flex-direction: column;
@@ -383,6 +381,32 @@ body.menu-expanded button path{
 #services .card h3{
     margin-block: 1.6rem;
 }
+
+
+/* Galery ------------------------- */
+
+#galery .content h3{
+    padding-bottom: 1.4rem;
+}
+
+#galery .content p{
+    text-align: left;
+    margin-bottom: 6.4rem;
+}
+
+#galery .content img{
+    border-radius: .6rem;
+}
+
+#galery .content img:hover{
+    cursor: pointer;
+}
+
+
+#galery{
+    background-color: var(--brand-beige);
+}
+
 
 
 /* Back to top Button ---------------- */
