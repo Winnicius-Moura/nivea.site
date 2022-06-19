@@ -406,11 +406,74 @@ body.menu-expanded button path{
     background-color: var(--brand-beige);
 }
 
+
+/* Duvidas Frequentes ----------------- */
+
+.accordion{
+    background-color: #EEE;
+    color: var(--paragraph);
+    cursor: pointer;
+    padding: 1.8rem;
+    width: min(52rem,100%);
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    
+}
+
+#questions .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.panel{
+    width: min(52rem, 100%);
+    padding: 0 1.8rem;
+    margin-inline: auto;
+    background-color: var(--brand-light);
+    color: var(--paragraph);
+    display: none;
+    overflow: hidden;
+    text-align: left;
+}
+
+.active, .accordion:hover{
+    background-color: #ccc;
+}
+
+
+.accordion::after{
+    content: '\02795';
+    font-size: 1.3rem;
+    color: #777;
+    float: right;
+    margin-left: .5px;
+}
+
+.active::after{
+    content: '\2796';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Back to top Button ---------------- */
 #backToTopButton{
     position: fixed;
-    bottom: 1rem;
-    right: 2.5rem;
+    bottom: .5rem;
+    right: .5rem;
 
     opacity: 0;
     visibility: hidden;
