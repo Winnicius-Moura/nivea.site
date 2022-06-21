@@ -51,3 +51,7 @@ for (i = 0; i < acc.length; i++){
         }
     });
 }
+
+function voltar() {
+    window.history.back();
+}
