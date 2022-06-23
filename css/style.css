@@ -22,7 +22,8 @@
 
     --bg-light: hsl(180, 14%, 97%);
     --brand-light:hsl(calc(var(--hue) - 3), 100%, 91%);
-    --brand-light-2:hsl(calc(var(--hue) - 10), 14%, 97%);
+    /* --brand-light-2:hsl(calc(var(--hue) - 10), 14%, 97%); */
+    --brand-light-2:hsl(calc(var(--hue) - 5), 100%, 97%);
     
 
 }
@@ -455,6 +456,21 @@ body.menu-expanded button path{
 
 .active::after{
     content: '\2796';
+}
+
+
+/* ABOUT ----------------------------- */
+#about{
+    background-color: var(--brand-light-2);
+}
+#about .content{
+    text-align: left;
+    margin-bottom: 6rem;
+}
+
+#about img{
+    border-radius: 2rem;
+    width: 32rem;
 }
 
 
