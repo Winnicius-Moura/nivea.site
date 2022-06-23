@@ -474,6 +474,38 @@ body.menu-expanded button path{
 }
 
 
+/* Contact -------------------------- */
+#contact{
+    text-align: left;
+}
+
+#contact header{
+    margin-bottom: 3.2rem;
+}
+
+#contact ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    margin-bottom: 3.2rem;
+}
+
+#contact ul li{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#contact .button{
+    margin-bottom: 6rem;
+    gap: 1rem;
+}
+
+#contact img{
+    border-radius: 1rem;
+    width: 100vw;
+}
 
 
 /* Back to top Button ---------------- */
