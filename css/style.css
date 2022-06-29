@@ -2,8 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    user-select: none;  
+    box-sizing: border-box;  
 }
 
 :root{
@@ -22,7 +21,6 @@
 
     --bg-light: hsl(180, 14%, 97%);
     --brand-light:hsl(calc(var(--hue) - 3), 100%, 91%);
-    /* --brand-light-2:hsl(calc(var(--hue) - 10), 14%, 97%); */
     --brand-light-2:hsl(calc(var(--hue) - 5), 100%, 97%);
     
 
@@ -40,6 +38,12 @@ html, body{
 ul{
     list-style: none;
 }
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 
 body{
     font-family: 'DM Sans';
@@ -391,6 +395,9 @@ body.menu-expanded button path{
 
 #galery .content p{
     text-align: left;
+}
+
+#galery .galery-link{
     margin-bottom: 6.4rem;
 }
 
@@ -402,7 +409,6 @@ body.menu-expanded button path{
     cursor: pointer;
 }
 
-
 #galery{
     background-color: var(--brand-beige);
 }
@@ -410,54 +416,48 @@ body.menu-expanded button path{
 
 /* Duvidas Frequentes ----------------- */
 
-.accordion{
-    background-color: #EEE;
-    color: var(--paragraph);
-    cursor: pointer;
-    padding: 1.8rem;
-    width: min(52rem,100%);
-    border: none;
-    outline: none;
-    font-size: 1.8rem;
-    
-}
-
-#questions .content{
+#questions .cards{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    height: auto;
+    gap: 3.2rem;
 }
 
-.panel{
-    width: min(52rem, 100%);
-    padding: 0 1.8rem;
-    margin-inline: auto;
-    background-color: var(--brand-light);
-    color: var(--paragraph);
-    display: none;
-    overflow: hidden;
+#questions .card{
+    padding: 2.4rem;
     text-align: left;
+    background: var(--brand-light-2);
+    border: 1px solid var(--brand-light);
+    border-radius: .6rem;
 }
 
-.active, .accordion:hover{
-    background-color: #ccc;
+#questions .card h3{
+    margin-block: 1.6rem;
 }
 
+#questions .card h3{
+    text-align: center;
+}
 
-.accordion::after{
-    content: '\02795';
-    font-size: 1.3rem;
-    color: #777;
+#questions .card svg.logo{
     float: right;
-    margin-left: .5px;
 }
 
-.active::after{
-    content: '\2796';
+#questions .card svg{
+    margin-block: 1.4rem;
 }
 
+#questions .card svg.aspas path{
+    fill: var(--primary-color);
+}
+
+#questions .more svg.logo{
+    width: 2.5rem;
+    margin-top: 1rem;
+}
+
+#questions .more svg.logo path{
+    fill: var(--primary-color);
+}
 
 /* ABOUT ----------------------------- */
 #about{
@@ -526,6 +526,7 @@ body.menu-expanded button path{
     visibility: visible;
     transform: translate(0);
 }
+
 
 /* Keyframes transitions ----------------- */
 
