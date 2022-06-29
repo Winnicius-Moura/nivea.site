@@ -390,7 +390,11 @@ body.menu-expanded button path{
 /* Galery ------------------------- */
 
 #galery .content h3{
-    padding-bottom: 1.4rem;
+    padding-block: 1.4rem;
+}
+
+#galery .galery-link h3:hover{
+    color: var(--button-hover);
 }
 
 #galery .content p{
@@ -505,6 +509,29 @@ body.menu-expanded button path{
 #contact img{
     border-radius: 1rem;
     width: 100vw;
+}
+
+/* FOOTER --------------------- */
+footer{
+    background-color: var(--primary-color);
+    color: white;
+    height: 25rem;
+    margin-top: 16rem;
+}
+
+footer .container svg path{
+    fill: white;
+}
+
+footer .container svg.logo{
+    width: 15rem;
+}
+
+footer .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 6rem;
 }
 
 
