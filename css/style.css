@@ -515,7 +515,7 @@ body.menu-expanded button path{
 footer{
     background-color: var(--primary-color);
     color: white;
-    height: 25rem;
+    height: 30rem;
     margin-top: 16rem;
 }
 
@@ -525,6 +525,11 @@ footer .container svg path{
 
 footer .container svg.logo{
     width: 15rem;
+}
+
+footer .container svg.instagram{
+    width: 3rem;
+    margin-top: 2rem;
 }
 
 footer .content{
