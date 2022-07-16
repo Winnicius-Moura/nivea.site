@@ -9,20 +9,20 @@ function onScroll(){
 }
 
 function showNavOnScroll(){
+    const showBackground = document.getElementById('navigation')
     if(scrollY > 0){
-        navigation.classList.add('scroll');
+        showBackground.classList.add('scroll');
     } else{
-        navigation.classList.remove('scroll');
+        showBackground.classList.remove('scroll');
     }
 }
 
-
-
 function showBackToTopButtonOnScroll(){
+    const showButtonTop = document.getElementById('backToTopButton')
     if(scrollY > 500){
-        backToTopButton.classList.add('show');
+        showButtonTop.classList.add('show');
     } else{
-        backToTopButton.classList.remove('show');
+        showButtonTop.classList.remove('show');
     }
 }
 
