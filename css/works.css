@@ -25,3 +25,7 @@
 #galery .button:hover{
     cursor: pointer;
 }
+
+.social-links img{
+    margin-block: 6rem;
+}
